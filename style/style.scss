@@ -1,0 +1,79 @@
+$redColor: hsl(356, 71, 50);
+$orangeColor: hsl(41, 100, 55); 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $orangeColor
+}
+
+section.welcomeScreen {
+    max-width: 80rem;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+
+}
+.menu ul {
+
+    //list-style-type: none;
+}
+.menu ul li {
+    //display: inline;
+    //text-align: right;
+    //position: relative;
+    //display: inline-flex;
+    display: inline-flex;
+    margin-right:3rem;
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+a:hover {
+    color: $redColor;
+}
+
+.logo {
+    align-items: flex-end;
+}
+
+}
+h1 {
+    color: $redColor;
+    font-family: "benoaBlack";
+    font-size: 4rem;
+    margin-bottom: -28px;
+}
+
+h1.top {
+    margin-bottom: -50px;
+}
+
+@font-face {
+    font-family: "benoaBlack";
+    src: url("../fonts/benoaBlack.ttf");
+}
+
+.leftbox {
+    display: flex;
+}
+
+
