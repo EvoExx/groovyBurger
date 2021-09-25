@@ -157,11 +157,9 @@ button:hover {
 }
 
 .squiggle {
-  background-color: red;
-  /* This fixed height is only for demo, your use cases might not need it */
-  height: 75px;
-  --svg: url("/path/to/repeater.svg#squiggle");
-  -webkit-mask-image: var(--svg);
-  mask-image: var(--svg);
+  height: 18px;
+  width: 2050px;
+  background-image: url(/img/quiggle.png);
+  background-repeat: repeat-x;
 }
 /*# sourceMappingURL=style.css.map */
