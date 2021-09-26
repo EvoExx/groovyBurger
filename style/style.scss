@@ -39,7 +39,7 @@ section.welcomeScreen {
 .header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .menu {
@@ -59,11 +59,14 @@ section.welcomeScreen {
     display: inline-flex;
     margin-right:3rem;
 
+.menu ul:last-child {
+    margin-right: none;
+}
+
 a {
     font-family:$gillSans;
     color: white;
-    text-decoration: underline;
-    text-decoration-thickness: 0.15rem;
+    text-decoration: none;
     text-transform: uppercase;
 
 }
@@ -92,7 +95,7 @@ h2 {
     font-family:$gillSans;
     text-transform: uppercase;
     color: white;
-    font-size: 4rem;
+    font-size: 5.5rem;
 }
 
 h2 span {
@@ -102,30 +105,34 @@ h2 span {
 h3 {
     font-family: $gillSans;
     color: $redColor;
-    font-size:3.5rem;
-    padding-bottom: 1rem;
+    font-size:4rem;
+
 }
 
 
 .boxContainer {
     display: flex;
+    align-items: flex-end;
+    padding-top: 4rem;
 }
 
 .leftBox {
     flex: 1;
+
 }
 
 .rightBox {
     flex: 1;
-    padding-left: 50px;
+ 
+    padding-left: 3rem;
 
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: white;
-    padding-bottom: 19%;
+    padding-top: 30%;
 }
 
 .rightBoxMenu {
@@ -154,8 +161,9 @@ button:hover {
 }
 
 .squiggle {
-    height: 18px;
-    width: 2050px;
+    position: absolute;
+    left: 0;
+    width: 100%;
     background-image: url(/img/quiggle.png);
     background-repeat: repeat-x;
   }
