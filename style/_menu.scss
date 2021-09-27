@@ -3,4 +3,46 @@ section.menuScreen {
     max-width: 80rem;
     margin: auto;
     height: 100%;
+
 }
+
+.menuHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 15px;
+}
+
+h3.ourMenu {
+    font-family: $benoa;
+}
+
+h4 {
+    font-family: $benoa;
+    color: $redColor;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h5 {
+    font-family: $manropeRegular;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+p.itemDesc {
+    font-family: $manropeRegular;
+    font-style: normal;
+    padding-bottom: none;
+    font-size: 0.8rem;
+    flex-basis: 100%;
+}
+

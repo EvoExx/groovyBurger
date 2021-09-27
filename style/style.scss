@@ -1,17 +1,16 @@
 //import scss
+@import '_variables';
 @import '_menu';
 
-//SCSS Variables
-$redColor: hsl(356, 71, 50);
-$orangeColor: hsl(41, 100, 55);
-$whiteColor: white;
-//fonts
-$gillSans: "gillSansUltraBold";
-$manropeRegular: "manropeRegular";
-
+//globals
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -139,11 +138,14 @@ h3 {
 
 }
 
-p {
+p.homeP {
+    padding-bottom: 50px;
+}
+
+p{
     font-family: $manropeRegular;
     font-size: 2rem;
     color: white;
-    padding-bottom: 50px;   
 }
 
 .rightBoxMenu {
