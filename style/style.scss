@@ -1,3 +1,6 @@
+//import scss
+@import '_menu';
+
 //SCSS Variables
 $redColor: hsl(356, 71, 50);
 $orangeColor: hsl(41, 100, 55);
@@ -26,20 +29,28 @@ $manropeRegular: "manropeRegular";
     src: url("../fonts/manropeRegular.ttf");
 }
 
+body, html {
+    height: 100%;
+}
 
 body {
     background: $orangeColor
 }
 
+.welcomeContainer {
+    height: 100%;
+}
+
 section.welcomeScreen {
     max-width: 80rem;
     margin: auto;
+
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .menu {
@@ -106,13 +117,14 @@ h3 {
     font-family: $gillSans;
     color: $redColor;
     font-size:4rem;
+    padding-bottom: 15px;
 
 }
 
 
 .boxContainer {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     padding-top: 4rem;
 }
 
@@ -123,16 +135,15 @@ h3 {
 
 .rightBox {
     flex: 1;
- 
     padding-left: 3rem;
 
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $manropeRegular;
     font-size: 2rem;
     color: white;
-    padding-top: 30%;
+    padding-bottom: 50px;   
 }
 
 .rightBoxMenu {
