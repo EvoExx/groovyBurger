@@ -6,17 +6,10 @@ section.menuScreen {
 
 }
 
-.menuHeader {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-}
-
 .menuItems {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    gap: 15px;
+    //gap: 15px;
 }
 
 h3.ourMenu {
@@ -27,7 +20,7 @@ h4 {
     font-family: $benoa;
     color: $redColor;
     font-size: 2rem;
-    padding-bottom: 0.5rem;
+    line-height: -1;
 }
 
 h5 {
@@ -44,5 +37,5 @@ p.itemDesc {
     padding-bottom: none;
     font-size: 0.8rem;
     flex-basis: 100%;
+    padding-bottom: 1rem;
 }
-

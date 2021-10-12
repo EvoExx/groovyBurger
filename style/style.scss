@@ -1,6 +1,7 @@
 //import scss
 @import '_variables';
 @import '_menu';
+@import '_contact';
 
 //globals
 * {
@@ -129,20 +130,18 @@ h3 {
 
 .leftBox {
     flex: 1;
-
 }
 
 .rightBox {
     flex: 1;
     padding-left: 3rem;
-
 }
 
 p.homeP {
     padding-bottom: 50px;
 }
 
-p{
+p {
     font-family: $manropeRegular;
     font-size: 2rem;
     color: white;

@@ -4,16 +4,6 @@ section.menuScreen {
   height: 100%;
 }
 
-.menuHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 2rem;
-}
-
 .menuItems {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,9 +12,6 @@ section.menuScreen {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  gap: 15px;
 }
 
 h3.ourMenu {
@@ -35,7 +22,7 @@ h4 {
   font-family: "benoaBlack";
   color: #da2531;
   font-size: 2rem;
-  padding-bottom: 0.5rem;
+  line-height: -1;
 }
 
 h5 {
@@ -53,6 +40,7 @@ p.itemDesc {
   font-size: 0.8rem;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  padding-bottom: 1rem;
 }
 
 * {
