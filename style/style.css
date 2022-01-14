@@ -43,6 +43,12 @@ p.itemDesc {
   padding-bottom: 1rem;
 }
 
+section.contactScreen {
+  max-width: 80rem;
+  margin: auto;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,13 +83,10 @@ body {
   background: #ffb61a;
 }
 
-.welcomeContainer {
-  height: 100%;
-}
-
 section.welcomeScreen {
   max-width: 80rem;
   margin: auto;
+  height: 100%;
 }
 
 .header {

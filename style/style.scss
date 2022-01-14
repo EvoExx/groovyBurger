@@ -1,7 +1,5 @@
 //import scss
-@import '_variables';
-@import '_menu';
-@import '_contact';
+@import '_variables', '_menu', '_contact';
 
 //globals
 * {
@@ -37,13 +35,10 @@ body {
     background: $orangeColor
 }
 
-.welcomeContainer {
-    height: 100%;
-}
-
 section.welcomeScreen {
     max-width: 80rem;
     margin: auto;
+    height: 100%;
 
 }
 
