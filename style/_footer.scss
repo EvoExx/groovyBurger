@@ -1,0 +1,13 @@
+section.footer {
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+    background-color: $redColor;
+    //opacity: 50%;
+}
+.squigglefooter {
+    background-image: url(/img/quiggle.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    margin-bottom: -0.96rem;
+}
