@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.menu ul {
+
+    //list-style-type: none;
+}
+.menu ul li {
+    //display: inline;
+    //text-align: right;
+    //position: relative;
+    //display: inline-flex;
+    display: inline-flex;
+    margin-right:3rem;
+
+.menu ul:last-child {
+    margin-right: none;
+}
+
+a {
+    font-family:$gillSans;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+a:hover {
+    color: $redColor;
+    cursor: grab;
+}
+
+.logo {
+    align-items: flex-end;
+}
+
+}
+
+h1 {
+
+    color: $redColor;
+    font-family: "benoaBlack";
+    font-size: 4rem;
+    line-height: 4rem;
+    //margin-bottom: -28px;
+    @include breakpoint-down(small) {
+        font-size: 4rem;
+    }
+}
+
+h1.top {
+    margin-bottom: -35px;
+}
