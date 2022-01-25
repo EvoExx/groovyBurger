@@ -1,6 +1,8 @@
 section.menuScreen {
     max-width: 80rem;
+    padding-top: 5%;
     margin: auto;
+    min-height: 100vh;
 }
 
 .menuItems {
@@ -24,6 +26,17 @@ h4 {
 
 .row1 {
     margin-right: 1rem;
+    @include breakpoint-down(small) {
+    padding: 3%;
+    }
+}
+
+.welcomeScreen h4 {
+    padding-top: 5%;
+}
+
+.row2 {
+    padding-right:0;
 }
 
 h5 {

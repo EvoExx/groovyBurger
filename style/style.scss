@@ -1,115 +1,118 @@
 //import scss
-@import '_variables', '_globals',  '_phonestyle', '_menu', '_footer', '_fonts', 'header', 'footer';
+@import "_variables", "_globals", "_phonestyle", "_menu", "_footer", "_fonts",
+  "header", "footer";
 
 h2 {
-    font-family:$gillSans;
-    text-transform: uppercase;
-    color: white;
-    font-size: 5.5rem;
-    display: inline;
+  font-family: $gillSans;
+  text-transform: uppercase;
+  color: white;
+  font-size: 5.5rem;
+  display: inline;
 
-    @include breakpoint-down(small) {
-        font-size: 3rem;
-    }
+  @include breakpoint-down(small) {
+    font-size: 3.4rem;
+  }
 }
 
 span {
-    color: $redColor;
+  color: $redColor;
+
+.welcomeScreen .boxContainer .leftBox {
+  padding: 0 5%;
+}
+  
 }
 
 h3 {
-    font-family: $gillSans;
-    color: $redColor;
-    font-size:4rem;
-    padding-bottom: 1rem;
-
+  font-family: $gillSans;
+  color: $redColor;
+  font-size: 4rem;
+  padding-bottom: 1rem;
 }
 
-
 .boxContainer {
-
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  //phoneStyle breakpoints
+  @include breakpoint-down(small) {
     display: flex;
-    flex: 1;
-    align-items: flex-start;
-    margin-top: 2rem;
-    margin-bottom: 10rem;
-    //phoneStyle breakpoints
-    @include breakpoint-down(small) {
-        display: flex;
-        flex-direction: column;
-    }
-    
-
+    flex-direction: column;
+  }
 }
 
 .leftBox {
-    flex: 1;
-    -ms-flex-align: center;
-    padding:1rem;
-
+  flex: 1;
+  -ms-flex-align: center;
 }
 
 .rightBox {
-    flex: 1;
-    -ms-flex-align: center;
+  flex: 1;
+  -ms-flex-align: center;
 }
 
 section.welcomeScreen {
-    padding-top: 5%;
-    max-width: 80rem;
-    margin: auto;
-    //margin-bottom: 0.7rem;
-    
-
+  padding-top: 5%;
+  //height: 100vh;
+  max-width: 80rem;
+  margin: auto;
+  //margin-bottom: 0.7rem;
+  min-height:100vh;
 }
 
-
 p.homeP {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
+  @include breakpoint-down(small) {
+    padding: 0% 0%;
+  }
 }
 
 p {
-    font-family: $manropeRegular;
-    font-size: 2rem;
-    color: white;
+  font-family: $manropeRegular;
+  font-size: 2rem;
+  color: white;
 }
 
 .rightBoxMenu {
-    display: flex;
+  display: flex;
 }
 
 .rightBoxMenu a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 button {
-    background:$redColor;
-    border: 0.3rem solid $redColor;
-    border-radius: 4rem;
-    padding:1rem;
-    flex: 1;
-    margin-right: 1rem;
-    font-family: $gillSans;
-    color: white;
-    text-transform: uppercase;
-    size: 4rem;
+  background: $redColor;
+  border: 0.3rem solid $redColor;
+  border-radius: 4rem;
+  padding: 1rem;
+  flex: 1;
+  margin-right: 1rem;
+  font-family: $gillSans;
+  color: white;
+  text-transform: uppercase;
+  size: 4rem;
 }
 
 button:hover {
-    background:none;
+  background: none;
 }
 
 .squiggle {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    background-image: url(/img/quiggle.png);
-    background-repeat: repeat-x;
-  }
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-position: left top;
+  background-image: url(/img/quiggle.png);
+  background-repeat: repeat-x;
+}
 
-  section.contactScreen {
-    max-width: 80rem;
-    margin: auto;
-    height: 100%;
+section.contactScreen {
+  padding-top: 5%;
+  max-width: 80rem;
+  margin: auto;
+  min-height: 100vh;
 }

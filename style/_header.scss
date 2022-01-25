@@ -54,12 +54,9 @@ h1 {
     font-family: "benoaBlack";
     font-size: 4rem;
     line-height: 4rem;
-    
-    display: inline;
     //margin-bottom: -28px;
     @include breakpoint-down(small) {
         font-size: 4rem;
-        height: 10rem;
     }
 }
 
