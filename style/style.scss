@@ -6,14 +6,11 @@ h2 {
     text-transform: uppercase;
     color: white;
     font-size: 5.5rem;
+    display: inline;
 
     @include breakpoint-down(small) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
-}
-
-.boxContainer {
-    width: 100%;
 }
 
 span {
@@ -24,7 +21,7 @@ h3 {
     font-family: $gillSans;
     color: $redColor;
     font-size:4rem;
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
 
 }
 
@@ -32,15 +29,14 @@ h3 {
 .boxContainer {
 
     display: flex;
+    flex: 1;
     align-items: flex-start;
-    padding-top: 4rem;
-
+    margin-top: 2rem;
+    margin-bottom: 10rem;
     //phoneStyle breakpoints
     @include breakpoint-down(small) {
         display: flex;
-        -ms-flex-align: center;
         flex-direction: column;
-        background-color: green;
     }
     
 
@@ -48,27 +44,25 @@ h3 {
 
 .leftBox {
     flex: 1;
-
+    -ms-flex-align: center;
+    padding:1rem;
 
 }
 
 .rightBox {
     flex: 1;
-    padding-left: 3rem;
-
-    @include breakpoint-down(small) {
-        padding-left:none;
-        
-    }
+    -ms-flex-align: center;
 }
 
 section.welcomeScreen {
     padding-top: 5%;
     max-width: 80rem;
     margin: auto;
-    height: 100%;
+    //margin-bottom: 0.7rem;
+    
 
 }
+
 
 p.homeP {
     padding-bottom: 50px;
@@ -88,6 +82,7 @@ p {
     text-decoration: none;
     color: white;
 }
+
 button {
     background:$redColor;
     border: 0.3rem solid $redColor;
@@ -114,7 +109,6 @@ button:hover {
   }
 
   section.contactScreen {
-    padding-top: 5%;
     max-width: 80rem;
     margin: auto;
     height: 100%;

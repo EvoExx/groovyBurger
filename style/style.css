@@ -13,10 +13,8 @@ body {
 }
 
 section.menuScreen {
-  padding-top: 5%;
   max-width: 80rem;
   margin: auto;
-  height: 100%;
 }
 
 .menuItems {
@@ -37,7 +35,13 @@ h4 {
   font-family: "benoaBlack";
   color: #da2531;
   font-size: 2rem;
-  line-height: -1;
+  line-height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.row1 {
+  margin-right: 1rem;
 }
 
 h5 {
@@ -45,6 +49,7 @@ h5 {
   text-transform: uppercase;
   color: white;
   font-size: 1rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
@@ -56,6 +61,10 @@ p.itemDesc {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   padding-bottom: 1rem;
+}
+
+section.menuScreen .leftBox {
+  padding-left: 0;
 }
 
 section.footer {
@@ -106,6 +115,12 @@ section.footer {
           align-items: flex-end;
 }
 
+@media (max-width: 39.9375em) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu ul li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -141,16 +156,18 @@ h1 {
   font-family: "benoaBlack";
   font-size: 4rem;
   line-height: 4rem;
+  display: inline;
 }
 
 @media (max-width: 39.9375em) {
   h1 {
     font-size: 4rem;
+    height: 10rem;
   }
 }
 
 h1.top {
-  margin-bottom: -35px;
+  margin-bottom: 0px;
 }
 
 section.footer {
@@ -172,16 +189,13 @@ h2 {
   text-transform: uppercase;
   color: white;
   font-size: 5.5rem;
+  display: inline;
 }
 
 @media (max-width: 39.9375em) {
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
-}
-
-.boxContainer {
-  width: 100%;
 }
 
 span {
@@ -192,17 +206,21 @@ h3 {
   font-family: "gillSansUltraBold";
   color: #da2531;
   font-size: 4rem;
-  padding-bottom: 15px;
+  padding-bottom: 1rem;
 }
 
 .boxContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -210,12 +228,10 @@ h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: green;
   }
 }
 
@@ -223,26 +239,21 @@ h3 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -ms-flex-align: center;
+  padding: 1rem;
 }
 
 .rightBox {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 3rem;
-}
-
-@media (max-width: 39.9375em) {
-  .rightBox {
-    padding-left: none;
-  }
+  -ms-flex-align: center;
 }
 
 section.welcomeScreen {
   padding-top: 5%;
   max-width: 80rem;
   margin: auto;
-  height: 100%;
 }
 
 p.homeP {
@@ -294,7 +305,6 @@ button:hover {
 }
 
 section.contactScreen {
-  padding-top: 5%;
   max-width: 80rem;
   margin: auto;
   height: 100%;

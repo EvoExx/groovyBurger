@@ -7,6 +7,9 @@
 .menu {
     display: flex;
     align-items: flex-end;
+    @include breakpoint-down(small) {
+        display: none;
+    }
 
 }
 
@@ -22,26 +25,26 @@
     display: inline-flex;
     margin-right:3rem;
 
-.menu ul:last-child {
+    .menu ul:last-child {
     margin-right: none;
-}
+    }
 
-a {
+    a {
     font-family:$gillSans;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 
-}
+    }
 
-a:hover {
+    a:hover {
     color: $redColor;
     cursor: grab;
-}
+    }
 
-.logo {
+    .logo {
     align-items: flex-end;
-}
+    }
 
 }
 
@@ -51,12 +54,15 @@ h1 {
     font-family: "benoaBlack";
     font-size: 4rem;
     line-height: 4rem;
+    
+    display: inline;
     //margin-bottom: -28px;
     @include breakpoint-down(small) {
         font-size: 4rem;
+        height: 10rem;
     }
 }
 
 h1.top {
-    margin-bottom: -35px;
+    margin-bottom: 0px;
 }
