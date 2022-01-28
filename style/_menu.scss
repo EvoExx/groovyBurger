@@ -7,8 +7,19 @@ section.menuScreen {
 
 .menuItems {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     //gap: 15px;
+}
+
+.menuItems img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    border: 0.5rem $redColor;
+}
+
+.menuItems .row1 .item {
+    padding-bottom: 4rem;
 }
 
 h3.ourMenu {
@@ -35,9 +46,6 @@ h4 {
     padding-top: 5%;
 }
 
-.row2 {
-    padding-right:0;
-}
 
 h5 {
     font-family: $manropeRegular;

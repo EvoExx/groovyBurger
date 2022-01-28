@@ -1,6 +1,6 @@
 //import scss
 @import "_variables", "_globals", "_phonestyle", "_menu", "_footer", "_fonts",
-  "header", "footer";
+  "header", "footer", "_mobileMenu";
 
 h2 {
   font-family: $gillSans;
@@ -11,6 +11,7 @@ h2 {
 
   @include breakpoint-down(small) {
     font-size: 3.4rem;
+    line-height: 3.6rem;
   }
 }
 
@@ -60,6 +61,9 @@ section.welcomeScreen {
   margin: auto;
   //margin-bottom: 0.7rem;
   min-height:100vh;
+  @include breakpoint-down(small) {
+    padding-top: 15%;
+  }
 }
 
 p.homeP {
@@ -116,3 +120,9 @@ section.contactScreen {
   margin: auto;
   min-height: 100vh;
 }
+
+// section.welcomeScreen, section.contactScreen, section.menuScreen {
+//   @include breakpoint-down(small) {
+//     text-align: center;
+// }
+// }

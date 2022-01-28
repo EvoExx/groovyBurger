@@ -1,1 +1,1 @@
-console.log('ARE YOU A CHONGUS?')
+console.log('ARE YOU A CHONGUS?');
